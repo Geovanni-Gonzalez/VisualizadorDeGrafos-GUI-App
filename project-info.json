@@ -1,30 +1,54 @@
 {
-    "project": "Visualizador de Grafos",
-    "tech": [
-        "C++",
-        "Qt / SFML",
-        "Graph Theory Algorithms"
-    ],
-    "features": [
-        "Interactive Graph Construction and Editing",
-        "Support for Directed, Weighted, and Undirected Graphs",
-        "Pathfinding Visualizer (Dijkstra, A*, etc.)",
-        "Minimum Spanning Tree (Prim/Kruskal) Generation",
-        "Persistence System for Graph Models (.txt/.json)"
-    ],
-    "stack": {
-        "language": "C++",
-        "framework": "Native Desktop GUI",
-        "tools": [
-            "GCC/Clang",
-            "CMake",
-            "Git"
+    "en": {
+        "tech": [
+            "C++",
+            "SFML / Qt",
+            "Graph Theory Algorithms"
         ],
-        "database": "Custom Serialization (Graph Export)"
+        "features": [
+            "Interactive graph construction and editing",
+            "Support for directed, weighted, and undirected graphs",
+            "Pathfinding visualizer (Dijkstra, A*)",
+            "Minimum Spanning Tree (Prim/Kruskal) generation",
+            "Persistence system for graph models"
+        ],
+        "stack": {
+            "language": "C++",
+            "framework": "Native Desktop GUI",
+            "tools": [
+                "GCC",
+                "CMake",
+                "SFML"
+            ],
+            "database": "Custom Serialization (.json)"
+        },
+        "screenshots": [],
+        "description": "A sophisticated C++ workstation for exploring the intricacies of Graph Theory. The application provides an interactive canvas where users can build complex networks, assign weights, and define directions. It serves as an educational and technical laboratory, visualizing real-time executions of legendary algorithms such as Dijkstra, A*, Prim, and Kruskal. With seamless graph persistence and an optimized SFML-based rendering engine, it is the perfect tool for both university students and algorithm researchers."
     },
-    "screenshots": [],
-    "description": {
-        "es": "Herramienta avanzada en C++ para el modelado y análisis de grafos. Permite aplicar algoritmos de teoría de grafos y visualizar resultados en una interfaz gráfica interactiva.",
-        "en": "Advanced C++ tool for graph modeling and analysis. Allows applying graph theory algorithms and visualizing results in an interactive GUI."
+    "es": {
+        "tech": [
+            "C++",
+            "SFML / Qt",
+            "Algoritmos de Teoría de Grafos"
+        ],
+        "features": [
+            "Construcción y edición interactiva de grafos",
+            "Soporte para grafos dirigidos, pesados y no dirigidos",
+            "Visualizador de rutas (Dijkstra, A*)",
+            "Generación de Árbol de Expansión Mínima (Prim/Kruskal)",
+            "Sistema de persistencia para modelos de grafos"
+        ],
+        "stack": {
+            "language": "C++",
+            "framework": "Interfaz Gráfica Nativa",
+            "tools": [
+                "GCC",
+                "CMake",
+                "SFML"
+            ],
+            "database": "Serialización Personalizada (.json)"
+        },
+        "screenshots": [],
+        "description": "Una sofisticada estación de trabajo en C++ para explorar las complejidades de la Teoría de Grafos. La aplicación proporciona un lienzo interactivo donde los usuarios pueden construir redes complejas, asignar pesos y definir direcciones. Sirve como un laboratorio educativo y técnico, visualizando ejecuciones en tiempo real de algoritmos legendarios como Dijkstra, A*, Prim y Kruskal. Con persistencia fluida de grafos y un motor de renderizado optimizado basado en SFML, es la herramienta perfecta para investigadores de algoritmos."
     }
 }
