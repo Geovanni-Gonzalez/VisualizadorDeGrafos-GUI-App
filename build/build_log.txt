@@ -1,0 +1,24 @@
+[ 14%] Automatic MOC and UIC for target VerifyLogic
+[ 14%] Built target VerifyLogic_autogen
+Consolidate compiler generated dependencies of target VerifyLogic
+[ 28%] Building CXX object CMakeFiles/VerifyLogic.dir/tests/VerifyLogic.cpp.o
+In file included from /usr/include/c++/11/cassert:44,
+                 from /mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp:2:
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp: In function ‘void testBasicGraph()’:
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp:17:22: error: ‘class LinkedList<Edge*>’ has no member named ‘front’
+   17 |     assert(v1->edges.front()->weight == 5);
+      |                      ^~~~~
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp: In function ‘void testDijkstra()’:
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp:66:17: error: ‘class LinkedList<Edge*>’ has no member named ‘front’
+   66 |     assert(path.front()->source->id == 1);
+      |                 ^~~~~
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp:67:17: error: ‘class LinkedList<Edge*>’ has no member named ‘front’
+   67 |     assert(path.front()->dest->id == 2);
+      |                 ^~~~~
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/tests/VerifyLogic.cpp:68:17: error: ‘class LinkedList<Edge*>’ has no member named ‘back’
+   68 |     assert(path.back()->dest->id == 3);
+      |                 ^~~~
+make[3]: *** [CMakeFiles/VerifyLogic.dir/build.make:90: CMakeFiles/VerifyLogic.dir/tests/VerifyLogic.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:113: CMakeFiles/VerifyLogic.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:120: CMakeFiles/VerifyLogic.dir/rule] Error 2
+make: *** [Makefile:137: VerifyLogic] Error 2

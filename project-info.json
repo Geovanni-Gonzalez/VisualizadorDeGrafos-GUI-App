@@ -1,0 +1,30 @@
+{
+    "project": "Visualizador de Grafos",
+    "tech": [
+        "C++",
+        "Qt / SFML",
+        "Graph Theory Algorithms"
+    ],
+    "features": [
+        "Interactive Graph Construction and Editing",
+        "Support for Directed, Weighted, and Undirected Graphs",
+        "Pathfinding Visualizer (Dijkstra, A*, etc.)",
+        "Minimum Spanning Tree (Prim/Kruskal) Generation",
+        "Persistence System for Graph Models (.txt/.json)"
+    ],
+    "stack": {
+        "language": "C++",
+        "framework": "Native Desktop GUI",
+        "tools": [
+            "GCC/Clang",
+            "CMake",
+            "Git"
+        ],
+        "database": "Custom Serialization (Graph Export)"
+    },
+    "screenshots": [],
+    "description": {
+        "es": "Herramienta avanzada en C++ para el modelado y análisis de grafos. Permite aplicar algoritmos de teoría de grafos y visualizar resultados en una interfaz gráfica interactiva.",
+        "en": "Advanced C++ tool for graph modeling and analysis. Allows applying graph theory algorithms and visualizing results in an interactive GUI."
+    }
+}

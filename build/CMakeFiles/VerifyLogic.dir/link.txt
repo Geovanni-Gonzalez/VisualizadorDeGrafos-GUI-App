@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/VerifyLogic.dir/VerifyLogic_autogen/mocs_compilation.cpp.o CMakeFiles/VerifyLogic.dir/tests/VerifyLogic.cpp.o CMakeFiles/VerifyLogic.dir/src/Graph.cpp.o CMakeFiles/VerifyLogic.dir/src/GraphAlgorithms.cpp.o CMakeFiles/VerifyLogic.dir/src/FileController.cpp.o -o VerifyLogic  /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3 

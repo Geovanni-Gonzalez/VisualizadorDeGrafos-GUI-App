@@ -1,0 +1,6 @@
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/build/CMakeFiles/VisualizadorDeGrafos.dir
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/build/CMakeFiles/VerifyLogic.dir
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/build/CMakeFiles/VisualizadorDeGrafos_autogen.dir
+/mnt/c/Users/geova/Github Desktop Repos/VisualizadorDeGrafos-GUI-App/build/CMakeFiles/VerifyLogic_autogen.dir
