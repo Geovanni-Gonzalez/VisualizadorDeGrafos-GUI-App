@@ -164,9 +164,14 @@ Graph* GraphView::getGraph() {
 void GraphView::setGraph(Graph* newGraph) {
     if (!newGraph) return;
     
-    clear();
-    delete graph;
-    graph = newGraph;
+    if (newGraph != graph) {
+        // Full replace
+        delete graph; // Old graph
+        graph = newGraph;
+    }
+    
+    // Refresh visual items (Clear scene but keep graph data)
+    scene->clear();
     
     // Reconstruct visual items
     // First pass: Nodes
@@ -254,11 +259,19 @@ void GraphView::nodeClicked(VisualNode* node) {
             tempSourceNode = node;
             node->setHighlighted(true); // Temporary visual feedback
         } else {
-            if (tempSourceNode != node) {
-                emit requestAddEdge(tempSourceNode->getVertex()->id, node->getVertex()->id, 1);
-            }
+            // Unhighlight first to be safe
             tempSourceNode->setHighlighted(false);
-            tempSourceNode = nullptr;
+            
+            // Store IDs locally before potential deletion of nodes
+            int srcId = tempSourceNode->getVertex()->id;
+            int dstId = node->getVertex()->id;
+            bool distinct = (tempSourceNode != node);
+            
+            tempSourceNode = nullptr; // Reset state
+            
+            if (distinct) {
+                emit requestAddEdge(srcId, dstId, 1);
+            }
         }
     } else if (currentMode == Mode::Delete) {
         emit requestDeleteVertex(node->getVertex()->id);

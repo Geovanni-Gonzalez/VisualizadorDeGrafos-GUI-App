@@ -138,10 +138,10 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     
     setCentralWidget(mainWidget); // Changed from setCentralWidget(centralWidget); to mainWidget
 
-    connect(graphView, &GraphView::nodeMovedCommand, this, &MainWindow::handleNodeMovedCommand);
-    connect(graphView, &GraphView::requestAddNode, this, &MainWindow::handleRequestAddNode);
-    connect(graphView, &GraphView::requestAddEdge, this, &MainWindow::handleRequestAddEdge);
-    connect(graphView, &GraphView::requestDeleteVertex, this, &MainWindow::handleRequestDeleteVertex);
+    connect(graphView, &GraphView::nodeMovedCommand, this, &MainWindow::handleNodeMovedCommand, Qt::QueuedConnection);
+    connect(graphView, &GraphView::requestAddNode, this, &MainWindow::handleRequestAddNode, Qt::QueuedConnection);
+    connect(graphView, &GraphView::requestAddEdge, this, &MainWindow::handleRequestAddEdge, Qt::QueuedConnection);
+    connect(graphView, &GraphView::requestDeleteVertex, this, &MainWindow::handleRequestDeleteVertex, Qt::QueuedConnection);
 
     createActions();
     createToolBar();

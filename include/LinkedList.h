@@ -40,6 +40,7 @@ public:
         } else {
             tail->next = newNode;
             newNode->prev = tail;
+            tail = newNode;
         }
         count++;
     }
