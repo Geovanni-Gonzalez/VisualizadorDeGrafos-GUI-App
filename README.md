@@ -1,83 +1,75 @@
-# Visualizador de Grafos Interactive Studio 🚀
+﻿# Visualizador de Grafos GUI App
 
-Una herramienta profesional y orientada al diseño para el modelado, edición y análisis de teoría de grafos, desarrollada íntegramente en C++ con Qt 5.
+## Descripción
+Aplicación C++ para visualizar grafos con componentes de interfaz, estructuras propias, algoritmos y CMake.
 
-![Visualizador de Grafos](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
-![Qt](https://img.shields.io/badge/Framework-Qt5-green.svg)
-![License](https://img.shields.io/badge/Status-Finalizada-orange.svg)
+## Objetivo
+Practicar estructuras de datos, algoritmos de grafos y aplicación gráfica en C++.
 
-## ✨ Características Principales
+## Tecnologías utilizadas
+- C++
+- CMake
+- Grafos
+- Estructuras de datos
+- Qt5 Widgets/Core/Gui
 
-- **🎨 Interfaz de Usuario Moderna**: Diseño estilo *Glassmorphism* con soporte para modo oscuro y estética profesional.
-- **🏗️ Construcción Interactiva**:
-  - Agregado manual de nodos y aristas con etiquetas personalizadas.
-  - Soporte para grafos **Dirigidos**, **No Dirigidos**, **Pesados** y **No Pesados**.
-  - Sistema de **Arrastrar y Soltar** para reposicionar nodos.
-- **🧠 Algoritmos Implementados**:
-  - **Dijkstra**: Caminos más cortos desde un origen.
-  - **Prim**: Generación de Árbol de Expansión Mínima (MST).
-  - **Floyd-Warshall**: Caminos más cortos entre todos los pares.
-  - **Detección de Ciclos**: Basado en DFS.
-  - **Matriz de Caminos**: Análisis de conectividad.
-  - **Centralidad**: Análisis de importancia de nodos.
-- **⚙️ Herramientas de Productividad**:
-  - **Sistema Deshacer/Rehacer (Undo/Redo)**: Control total sobre tus ediciones (`Ctrl+Z`, `Ctrl+Y`).
-  - **Disposición Automática**: Algoritmo basado en fuerzas físicas para organizar el grafo automáticamente.
-  - **Navegación Eficiente**: Zoom fluido con la rueda del ratón y paneo con clic derecho.
-- **💾 Persistencia e Intercambio**:
-  - Guardado y carga en formato nativo `.graph`.
-  - Exportación de capturas en formato **PNG**.
+## Funcionalidades principales
+- Modelo de grafo
+- Algoritmos separados
+- Controlador de archivos
+- Lista enlazada
+- Prueba VerifyLogic.cpp
 
-## 🚀 Instalación y Compilación
+## Mi rol
+Desarrollé estructuras, algoritmos y componentes de visualización.
 
-### Requisitos previos
+## Aprendizajes clave
+- Grafos C++
+- include/src
+- CMake
+- Pruebas de lógica
 
-- Compilador de C++ (GCC/MinGW con soporte C++17).
-- **Qt 5.x** (Widgets y Core).
-- **CMake** (3.5 o superior).
+## Instalación y ejecución
+```bash
+cd VisualizadorDeGrafos-GUI-App
+cmake -S . -B build
+cmake --build build
+```
+Luego ejecutar el binario generado en `build/`.
 
-### Pasos para compilar
+## Estructura del proyecto
+- src/: implementaciones
+- include/: headers
+- tests/: prueba
+- CMakeLists.txt: build
 
-1. Clona el repositorio:
+## Capturas o demo
+![Captura principal](screenshots/principalImage.png)
 
-   ```bash
-   git clone https://github.com/Geovanni-Gonzalez/VisualizadorDeGrafos-GUI-App.git
-   cd VisualizadorDeGrafos-GUI-App
-   ```
+## Estado del proyecto
+Proyecto académico funcional/en desarrollo.
 
-2. Crea una carpeta de construcción y compila:
+## Valor técnico demostrado
+Muestra C++ estructurado, algoritmos de grafos y build reproducible.
 
-   ```bash
-   mkdir build && cd build
-   cmake ..
-   make
-   ```
+## Mejoras futuras
+- Agregar guía de instalación de Qt5 por sistema operativo
+- Agregar ejemplos de grafo
+- Ampliar pruebas
 
-3. Ejecuta la aplicación:
+## Autor
+Geovanni González  
+Estudiante de Ingeniería en Computación  
+GitHub: [Geovanni-Gonzalez](https://github.com/Geovanni-Gonzalez)
 
-   ```bash
-   ./VisualizadorDeGrafos
-   ```
 
-## 🎮 Guía de Uso Rápido
 
-1. **Nuevo Grafo**: Define las propiedades (dirigido/pesado) en el arranque.
-2. **Modos de Edición**: Usa la barra de herramientas superior para cambiar entre:
-   - ➕ **Nodo**: Haz clic en el lienzo para crear uno.
-   - 🔗 **Arista**: Arrastra desde un nodo de origen a uno de destino.
-   - 🖐️ **Mover**: Reposiciona tus nodos.
-   - ❌ **Eliminar**: Haz clic en un elemento para quitarlo.
-3. **Navegación**:
-   - 🖱️ **Zoom**: Rueda del ratón.
-   - ↔️ **Paneo**: Clic derecho y arrastrar.
-4. **Análisis**: Selecciona cualquier algoritmo del menú para visualizar los resultados matemáticos en el panel lateral.
 
-## 🛠️ Tecnologías Utilizadas
 
-- **Lenguaje**: C++17.
-- **Framework GUI**: Qt 5.
-- **Estructuras de Datos**: Implementación manual de `LinkedList` para el motor del grafo (sin dependencias de STL para lógica central).
-- **Build System**: CMake.
 
----
-Desarrollado con ❤️ para el modelado de estructuras de datos y teoría de grafos.
+
+
+
+
+
+
