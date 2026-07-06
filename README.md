@@ -1,5 +1,7 @@
 ﻿# Visualizador de Grafos GUI App
 
+[![CI](https://github.com/Geovanni-Gonzalez/VisualizadorDeGrafos-GUI-App/actions/workflows/ci.yml/badge.svg)](https://github.com/Geovanni-Gonzalez/VisualizadorDeGrafos-GUI-App/actions/workflows/ci.yml)
+
 ## Descripción
 Aplicación C++ para visualizar grafos con componentes de interfaz, estructuras propias, algoritmos y CMake.
 
