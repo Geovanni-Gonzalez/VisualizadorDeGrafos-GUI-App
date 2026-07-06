@@ -8,6 +8,26 @@ Aplicación C++ para visualizar grafos con componentes de interfaz, estructuras 
 ## Objetivo
 Practicar estructuras de datos, algoritmos de grafos y aplicación gráfica en C++.
 
+## Caso de estudio
+
+### Problema
+Analizar grafos solo desde archivos o consola dificulta entender relaciones, pesos y resultados de algoritmos. Una interfaz grafica permite construir escenarios, inspeccionar conexiones y comprobar visualmente operaciones sobre el grafo.
+
+### Solución
+La aplicacion combina un modelo de grafo en C++ con una interfaz Qt. El usuario puede cargar, editar y visualizar grafos mientras la logica de algoritmos se mantiene separada de la capa grafica.
+
+### Arquitectura
+- `include/`: contratos de clases, estructuras y componentes Qt.
+- `src/`: implementacion del modelo, controladores, vista y algoritmos.
+- `tests/`: verificacion de logica independiente de la interfaz.
+- `CMakeLists.txt`: build reproducible para Qt/C++.
+
+### Decisiones técnicas destacadas
+- Separacion entre modelo de grafo, algoritmos y widgets Qt.
+- CMake para compilar de forma consistente en local y GitHub Actions.
+- Prueba `VerifyLogic.cpp` para validar comportamiento sin depender de la GUI.
+- Limpieza de artefactos generados para mantener el repositorio legible.
+
 ## Tecnologías utilizadas
 - C++
 - CMake
