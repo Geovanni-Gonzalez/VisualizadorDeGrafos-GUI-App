@@ -59,6 +59,15 @@ cmake --build build
 ```
 Luego ejecutar el binario generado en `build/`.
 
+## Verificacion
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release
+./build/VerifyLogic
+```
+
+GitHub Actions compila la aplicacion Qt y ejecuta `VerifyLogic`, un binario de pruebas de logica independiente de la GUI.
+
 ## Estructura del proyecto
 - src/: implementaciones
 - include/: headers

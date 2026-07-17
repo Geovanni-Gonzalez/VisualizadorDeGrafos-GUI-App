@@ -6,7 +6,7 @@ Backlog priorizado. Impacto/Esfuerzo: Alto/Medio/Bajo.
 
 | # | Mejora | Impacto | Esfuerzo | Prioridad |
 |---|---|---|---|---|
-| 1 | Ejecutar `./build/VerifyLogic` como paso de CI (o integrarlo con CTest) — convierte 19 asserts en evidencia verde pública | Alto | Bajo | P0 |
+| 1 | ✅ Aplicado: CI ejecuta `./build/VerifyLogic` después del build CMake | Alto | Bajo | P0 |
 | 2 | GitHub Topics: `cpp`, `qt`, `graph-algorithms`, `dijkstra`, `data-structures`, `cmake` + descripción | Medio | Bajo | P1 |
 | 3 | 2-3 capturas de la GUI en acción (grafo cargado, Dijkstra resaltado, MST) — la GUI es el diferenciador y solo hay 1 imagen | Medio | Bajo | P1 |
 

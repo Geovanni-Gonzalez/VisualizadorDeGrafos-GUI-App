@@ -22,8 +22,8 @@ Visualizador y editor gráfico de grafos en **C++17 + Qt5** (~2,180 LOC): constr
 
 ## 3. Calidad y pruebas
 
-- 🟦 `tests/VerifyLogic.cpp` (84 LOC, ~19 asserts): grafo básico, detección de ciclos, algoritmos — compilado como target separado sin GUI (buena separación).
-- ⛔ CI compila ambos targets pero **no ejecuta** `VerifyLogic`.
+- ✅ `tests/VerifyLogic.cpp` (84 LOC, ~19 asserts): grafo básico, detección de ciclos, algoritmos — compilado como target separado sin GUI (buena separación).
+- ✅ CI compila ambos targets y ejecuta `VerifyLogic`.
 - `LinkedList` con constructor de copia explícito para evitar punteros colgantes — conciencia de rule-of-three; gestión manual de matrices con `freeMatrix` pareados.
 
 ## 4. Fortalezas
@@ -36,7 +36,7 @@ Visualizador y editor gráfico de grafos en **C++17 + Qt5** (~2,180 LOC): constr
 
 | Hallazgo | Severidad | Nota |
 |---|---|---|
-| CI no ejecuta `VerifyLogic` (un `./build/VerifyLogic` bastaría) | Media | Evidencia de ejecución gratis |
+| Cobertura limitada de `VerifyLogic` | Media | Faltan casos de grafo desconexo, pesos inválidos e ida/vuelta de archivo |
 | Memoria manual (`bool**`, `int**`, `new/delete`) sin RAII | Media | Correcto si los `freeMatrix` se llaman; smart pointers serían más defendibles |
 | Qt5 (EOL comercial) en vez de Qt6 | Baja | Migración simple |
 | Sin capturas de la GUI en el README más allá de una imagen | Baja | La GUI es el punto del proyecto |
@@ -48,4 +48,4 @@ Visualizador y editor gráfico de grafos en **C++17 + Qt5** (~2,180 LOC): constr
 
 ## 7. Recomendaciones
 
-Ver `IMPROVEMENT_ROADMAP.md`. P0: ejecutar VerifyLogic en CI (una línea).
+Ver `IMPROVEMENT_ROADMAP.md`. P0 de CI aplicado; siguiente foco: ampliar `VerifyLogic`.
